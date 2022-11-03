@@ -27,3 +27,13 @@
     margin-top: 10px;
 }
 
+.meal-container{
+    width: 709px;
+    height: 457px;
+
+    background-color: rgba(132, 215, 50, 0.3);
+}
+
+.margin-top-5px{
+    margin-top:  5px;
+}
