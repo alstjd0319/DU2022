@@ -31,9 +31,26 @@
     width: 709px;
     height: 457px;
 
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-left: 15px;
+
     background-color: rgba(132, 215, 50, 0.3);
 }
 
 .margin-top-5px{
     margin-top:  5px;
+}
+
+.meal-container > .meal-box{
+    float: left;
+    width: 168px;
+    height: 368px;
+
+    background-color: rgba(225, 59, 59, 0.3);
+}
+
+.meal-container > .meal-box:nth-child(2){
+    margin-left: 83px;
+    margin-right: 93px;
 }
