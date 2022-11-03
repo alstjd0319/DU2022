@@ -35,7 +35,7 @@
     padding-top: 30px;
     padding-left: 15px;
 
-    background-color: rgba(132, 215, 50, 0.3);
+
 }
 
 .margin-top-5px{
@@ -47,10 +47,57 @@
     width: 168px;
     height: 368px;
 
-    background-color: rgba(225, 59, 59, 0.3);
 }
 
 .meal-container > .meal-box:nth-child(2){
     margin-left: 83px;
     margin-right: 93px;
+}
+
+.meal-container > .meal-box > .meal-type{
+    width: 60px;
+    height: 60px;
+
+    margin: auto;
+
+    box-sizing: border-box;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 60px;
+
+    text-align: center;
+
+    color: #2D5FC0;
+
+    border: 1px solid #2D5FC0;
+    border-radius: 100%;
+
+}
+.meal-container > .meal-box > img{
+    display: block;
+    width: 168px;
+    height: 126px;
+
+    margin-top: 10px;
+}
+
+.meal-container > .meal-box > .meal-list{
+    width: 81px;
+    height: 85px;
+    font-size: 14px;
+    text-align: center;
+
+    margin: 30px auto 34px;
+}
+
+.meal-container > .meal-box > button{
+    display: block;
+    width: 115px;
+    height: 23px;
+    margin: auto;
+    
+    color: white;
+    background: #F5924A;
+    border-radius: 7px;
+    border: none;
 }
