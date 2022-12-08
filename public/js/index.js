@@ -1,12 +1,25 @@
-const userNameElement = document.querySelector('.user-name');
-const headerUserNameElement= document.querySelector('.user');
-const localUserName = localStorage.getItem('userName');
-const userNameBtn = document.querySelector('#name');
+const userNameElement = document.querySelector('.user');
+const headerUserNameElement= document.querySelector('#name');
 
-const setUserNameInnerHtml = () =>{
-  userNameElement.innerHTML = '<span>${name}</span> <span>님</span>';
-  userNameBtn.textContent = name;
+const localUserName = localStorage.getItem('userName');
+
+const schoolNumberElement = document.querySelector('#schoolnum');
+const localSchoolNum = document.querySelector('#schoolnum');
+const localemail = document.querySelector('#email');
+const emailElement = document.querySelector('#email');
+
+
+const setUserNameInnerHtml = () => {
   headerUserNameElement.innerHTML = '${name} <span>님</span>';
+  userNameElement.textContent = name;
+};
+
+const setSchoolNumber = () => {
+  schoolNumberElement.innerHtml = '${schoolnum}';
+};
+
+const setEmail = () => {
+  emailElement.innerHtmel = '${email}';
 };
 
 if (localUserName) {
@@ -18,4 +31,22 @@ userNameElement.onclick = () => {
   localStorage.setItem('userName', userName);
 
   setUserNameInnerHtml(userName);
+};
+
+schoolNumberElement.onclick = () => {
+  const scNumber = prompt('학번을 입력해 주세요.');
+  localStorage.setItem('scNumber', scNumber);
+};
+
+if (localSchoolNum) {
+  setSchoolNumber(localSchoolNum);
+}
+
+if (localemail) {
+  setEmail(localemail);
+}
+
+emailElement.onclick = () => {
+  const myEmail = prompt('학번을 입력해 주세요.');
+  localStorage.setItem('myEmail', myEmail);
 };
