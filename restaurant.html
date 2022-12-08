@@ -42,7 +42,7 @@
       </div>
     </div>    
     <div class="contents">
-      <div class="date-bar">
+      <div class="date-bar" id="first-date-bar">
         <div>2021-04-16 (금)</div>
         <img src="public/image/Polygon 2.png">
       </div>
@@ -98,5 +98,12 @@
       </div>
     </div>
   </section>
+  <script>
+    const f_date_bar = document.getElementById('first-date-bar')
+    f_date_bar.onclick = function() {
+      f_date_bar.style.color = 'red';
+    }
+    
+  </script>
 </body>
 </html>
